@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "my-personal-site",
-  "author": "Natedoggo",
+  "author": "Nate Paradis",
   "keywords": [
     "gatsby"
   ],
@@ -13,6 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d public -b deploy",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -24,6 +25,7 @@
     "@types/node": "^18.7.1",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "gh-pages": "^4.0.0",
     "typescript": "^4.7.4"
   }
 }
